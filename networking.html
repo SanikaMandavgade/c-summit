@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Networking — The Guest Experience Summit</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/shared.css">
+<style>
+  .experience-row{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center;margin-bottom:96px;}
+  .experience-row.reverse{direction:rtl;}
+  .experience-row.reverse > *{direction:ltr;}
+  .experience-img{border-radius:var(--radius);overflow:hidden;aspect-ratio:4/3.2;}
+  .experience-img img{width:100%;height:100%;object-fit:cover;}
+  .experience-content h3{font-size:32px;text-transform:uppercase;margin:12px 0 16px;}
+  .experience-content p{color:var(--text-secondary);font-size:16px;line-height:1.7;margin-bottom:20px;}
+  .experience-list{display:flex;flex-direction:column;gap:12px;margin-bottom:24px;}
+  .experience-list-item{display:flex;gap:10px;font-size:14px;align-items:flex-start;}
+  .experience-list-item svg{flex-shrink:0;color:var(--primary);margin-top:2px;}
+
+  .app-feature-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;}
+  .app-feature{padding:28px;text-align:center;}
+  .app-feature-icon{width:48px;height:48px;border-radius:12px;background:var(--primary-tint);color:var(--primary);display:flex;align-items:center;justify-content:center;margin:0 auto 16px;}
+  .app-feature h4{font-size:15px;margin-bottom:8px;}
+  .app-feature p{font-size:13px;color:var(--text-secondary);}
+
+  @media (max-width:1000px){
+    .experience-row,.experience-row.reverse{grid-template-columns:1fr;direction:ltr;}
+    .app-feature-grid{grid-template-columns:repeat(2,1fr);}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <nav>
+    <a href="index.html" class="logo">THE GUEST<br>EXPERIENCE<br><span class="accent">SUMMIT</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="agenda.html">Agenda</a></li>
+      <li><a href="speakers.html">Speakers</a></li>
+      <li><a href="partners.html">Partners</a></li>
+      <li><a href="insights.html">Insights</a></li>
+      <li><a href="networking.html" class="active">Networking</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+    <a href="request-invitation.html" class="btn btn-primary">Request Invitation</a>
+  </nav>
+</header>
+
+<section class="page-hero">
+  <div class="wrap">
+    <div class="eyebrow">Networking</div>
+    <h1>Connection, by Design</h1>
+    <p class="sub">No badge-scanning, no booth queues. Every networking moment at the Summit is structured, curated and built around the conversations that actually matter to a C-level agenda.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+
+    <div class="experience-row">
+      <div class="experience-img">
+        <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?q=80&w=800&auto=format&fit=crop" alt="Executive roundtable discussion">
+      </div>
+      <div class="experience-content">
+        <div class="eyebrow">Executive Roundtables</div>
+        <h3>Forty-Five Minutes.<br>Five Peers. One Topic.</h3>
+        <p>Twelve roundtables run throughout the day, each capped at six senior leaders and hosted by a named industry figure. Topics are set in advance and discussion is off the record.</p>
+        <div class="experience-list">
+          <div class="experience-list-item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Capped at 6 participants per table</div>
+          <div class="experience-list-item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Hosted by a named senior leader</div>
+          <div class="experience-list-item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Chatham House Rule — off the record</div>
+        </div>
+        <a href="#" class="btn btn-secondary">Reserve Your Seat →</a>
+      </div>
+    </div>
+
+    <div class="experience-row reverse">
+      <div class="experience-img">
+        <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?q=80&w=800&auto=format&fit=crop" alt="Hosted dinner evening">
+      </div>
+      <div class="experience-content">
+        <div class="eyebrow">Hosted Dinners</div>
+        <h3>The Summit Dinner</h3>
+        <p>The day closes with a hosted dinner in The Landmark's Winter Garden — by invitation only, seating arranged to mix sectors and seniority deliberately, never by who registered first.</p>
+        <div class="experience-list">
+          <div class="experience-list-item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> By invitation, curated seating plan</div>
+          <div class="experience-list-item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Hosted by this year's Headline Partner</div>
+          <div class="experience-list-item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Live music and closing remarks</div>
+        </div>
+        <a href="#" class="btn btn-secondary">Learn More →</a>
+      </div>
+    </div>
+
+    <div class="experience-row">
+      <div class="experience-img">
+        <img src="https://images.unsplash.com/photo-1582192730841-2a682d7375f9?q=80&w=800&auto=format&fit=crop" alt="One-to-one business meeting">
+      </div>
+      <div class="experience-content">
+        <div class="eyebrow">VIP & Private Meetings</div>
+        <h3>Pre-Arranged,<br>One-to-One</h3>
+        <p>Delegates and partners can request private meeting slots ahead of the event through the event app. Our team confirms availability and books a private meeting room.</p>
+        <div class="experience-list">
+          <div class="experience-list-item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Requested and confirmed pre-event</div>
+          <div class="experience-list-item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Private meeting rooms on-site</div>
+          <div class="experience-list-item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> 20-minute slots, back-to-back scheduling</div>
+        </div>
+        <a href="#" class="btn btn-secondary">Request a Meeting →</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="tight" style="background:var(--bg-light);">
+  <div class="wrap">
+    <div class="section-head">
+      <div><div class="eyebrow">Networking Lounge</div><h2 style="font-size:32px;">Built for Unplanned Conversation</h2></div>
+    </div>
+    <p style="color:var(--text-secondary);font-size:16px;max-width:640px;margin-top:-24px;margin-bottom:32px;">Between sessions, the Networking Lounge offers a quieter space than the Grand Foyer — comfortable seating, espresso bar, and proximity to every breakout room.</p>
+    <div class="experience-img" style="aspect-ratio:21/8;">
+      <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=1400&auto=format&fit=crop" alt="Lounge networking space">
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="section-head">
+      <div><div class="eyebrow">Event App</div><h2>Your Summit,<br>In Your Pocket</h2></div>
+    </div>
+    <div class="app-feature-grid">
+      <div class="card app-feature">
+        <div class="app-feature-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M12 18h.01"/></svg></div>
+        <h4>Attendee Directory</h4>
+        <p>Search and message the full delegate list, filtered by company and role</p>
+      </div>
+      <div class="card app-feature">
+        <div class="app-feature-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg></div>
+        <h4>Personal Agenda</h4>
+        <p>Build your own schedule across sessions, roundtables and meetings</p>
+      </div>
+      <div class="card app-feature">
+        <div class="app-feature-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div>
+        <h4>In-App Messaging</h4>
+        <p>Connect directly with other attendees before, during and after the Summit</p>
+      </div>
+      <div class="card app-feature">
+        <div class="app-feature-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
+        <h4>Live Schedule Updates</h4>
+        <p>Real-time room changes and timing alerts pushed straight to your phone</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="tight" style="background:var(--bg-light);">
+  <div class="wrap">
+    <div class="section-head">
+      <div><div class="eyebrow">Community</div><h2 style="font-size:32px;">Access Doesn't End at 9pm</h2></div>
+    </div>
+    <p style="color:var(--text-secondary);font-size:16px;max-width:640px;margin-top:-24px;">Every attendee joins the Guest Experience Leaders community — a private, year-round network for the people who were in the room. Quarterly virtual roundtables, early access to research, and direct introductions on request.</p>
+  </div>
+</section>
+
+<section class="tight">
+  <div class="wrap">
+    <div class="cta-final">
+      <h2>Secure Your Seat at the Table</h2>
+      <p>Networking access like this is reserved for the 250 verified C-level leaders who attend each year.</p>
+      <div class="cta-final-row">
+        <a href="request-invitation.html" class="btn btn-primary">Request an Invitation →</a>
+        <a href="agenda.html" class="btn btn-secondary">View the Agenda</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo">THE GUEST EXPERIENCE<br><span class="accent">SUMMIT</span></div>
+        <p class="footer-desc">The world's first exclusively C-level summit where hospitality leaders shape the future of guest experience.</p>
+      </div>
+      <div class="footer-col"><h4>Event</h4><ul><li><a href="agenda.html">Agenda</a></li><li><a href="speakers.html">Speakers</a></li><li><a href="networking.html">Networking</a></li><li><a href="insights.html">Insights</a></li></ul></div>
+      <div class="footer-col"><h4>Attend</h4><ul><li><a href="request-invitation.html">Request Invitation</a></li><li><a href="request-invitation.html">Eligibility</a></li><li><a href="contact.html">FAQ</a></li></ul></div>
+      <div class="footer-col"><h4>Partner</h4><ul><li><a href="partners.html">Sponsorship</a></li><li><a href="partners.html">Partners</a></li><li><a href="partners.html">Case Studies</a></li></ul></div>
+      <div class="footer-col"><h4>Contact</h4><ul><li><a href="contact.html">The Landmark, London</a></li><li><a href="agenda.html">28 January 2027</a></li><li><a href="contact.html">Get in Touch</a></li></ul></div>
+    </div>
+    <div class="footer-bottom"><span>© 2027 The Guest Experience Summit. All rights reserved.</span><span>Privacy Policy · Terms</span></div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Insights — The Guest Experience Summit</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/shared.css">
+<style>
+  .featured-article{
+    display:grid;grid-template-columns:1.1fr 1fr;gap:0;border-radius:var(--radius);overflow:hidden;
+    border:1px solid var(--border);box-shadow:0 20px 50px rgba(17,17,17,.06);margin-bottom:64px;
+  }
+  .featured-article img{width:100%;height:100%;object-fit:cover;min-height:340px;}
+  .featured-article-content{padding:44px;display:flex;flex-direction:column;justify-content:center;}
+  .article-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;}
+  .article-card{overflow:hidden;}
+  .article-img{aspect-ratio:16/10;overflow:hidden;}
+  .article-img img{width:100%;height:100%;object-fit:cover;transition:transform .3s ease;}
+  .article-card:hover .article-img img{transform:scale(1.05);}
+  .article-content{padding:22px;}
+  .article-cat{margin-bottom:12px;}
+  .article-title{font-size:17px;font-weight:700;line-height:1.35;margin-bottom:10px;}
+  .article-excerpt{font-size:13px;color:var(--text-secondary);line-height:1.6;margin-bottom:16px;}
+  .article-meta{display:flex;align-items:center;gap:10px;font-size:12px;color:var(--text-secondary);}
+  .article-meta img{width:24px;height:24px;border-radius:50%;object-fit:cover;}
+
+  .resource-row{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;}
+  .resource-card{padding:28px;display:flex;flex-direction:column;}
+  .resource-type-icon{width:44px;height:44px;border-radius:10px;background:var(--secondary);color:#fff;display:flex;align-items:center;justify-content:center;margin-bottom:18px;}
+  .resource-card h4{font-size:16px;margin-bottom:8px;}
+  .resource-card p{font-size:13px;color:var(--text-secondary);margin-bottom:18px;flex:1;}
+
+  .newsletter-cta{
+    background:var(--secondary);border-radius:var(--radius);padding:56px;text-align:center;color:#fff;
+  }
+  .newsletter-cta h2{color:#fff;font-size:32px;text-transform:uppercase;}
+  .newsletter-cta p{color:#bbb;max-width:480px;margin:14px auto 28px;}
+  .newsletter-form{display:flex;gap:10px;max-width:440px;margin:0 auto;flex-wrap:wrap;}
+  .newsletter-form input{flex:1;min-width:220px;padding:14px 18px;border-radius:8px;border:none;font-family:inherit;font-size:14px;}
+
+  @media (max-width:1000px){
+    .featured-article{grid-template-columns:1fr;}
+    .article-grid,.resource-row{grid-template-columns:repeat(2,1fr);}
+  }
+  @media (max-width:640px){.article-grid,.resource-row{grid-template-columns:1fr;}}
+</style>
+</head>
+<body>
+
+<header>
+  <nav>
+    <a href="index.html" class="logo">THE GUEST<br>EXPERIENCE<br><span class="accent">SUMMIT</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="agenda.html">Agenda</a></li>
+      <li><a href="speakers.html">Speakers</a></li>
+      <li><a href="partners.html">Partners</a></li>
+      <li><a href="insights.html" class="active">Insights</a></li>
+      <li><a href="networking.html">Networking</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+    <a href="request-invitation.html" class="btn btn-primary">Request Invitation</a>
+  </nav>
+</header>
+
+<section class="page-hero">
+  <div class="wrap">
+    <div class="eyebrow">Insights</div>
+    <h1>Thinking From the<br>Front Lines of Hospitality</h1>
+    <p class="sub">Original research, interviews and analysis from the leaders shaping the future of guest experience — published year-round, not just at the Summit.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+
+    <a href="article.html" class="featured-article">
+      <img src="https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?q=80&w=900&auto=format&fit=crop" alt="Hotel lobby reception">
+      <div class="featured-article-content">
+        <span class="badge" style="margin-bottom:16px;width:fit-content;">Featured Report</span>
+        <h2 style="font-size:28px;text-transform:none;line-height:1.25;margin-bottom:16px;">The 2027 State of Guest Experience: What 250 Executives Told Us</h2>
+        <p style="color:var(--text-secondary);font-size:15px;line-height:1.6;margin-bottom:22px;">Our annual survey of C-level hospitality leaders reveals where experience investment is actually going in 2027 — and where the gap between strategy and execution remains widest.</p>
+        <div class="article-meta">
+          <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=100&auto=format&fit=crop" alt="">
+          <span>By Heather Bader · 12 min read · 14 June 2026</span>
+        </div>
+      </div>
+    </a>
+
+    <div class="filter-bar">
+      <div class="filter-search">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+        <input type="text" placeholder="Search articles, reports, interviews">
+      </div>
+      <div class="filter-chip active">All</div>
+      <div class="filter-chip">Articles</div>
+      <div class="filter-chip">Reports</div>
+      <div class="filter-chip">Whitepapers</div>
+      <div class="filter-chip">Video Interviews</div>
+      <div class="filter-chip">Podcast</div>
+    </div>
+
+    <div class="article-grid">
+      <a href="article.html" class="card article-card">
+        <div class="article-img"><img src="https://images.unsplash.com/photo-1564501049412-61c2a3083791?q=80&w=600&auto=format&fit=crop" alt=""></div>
+        <div class="article-content">
+          <div class="article-cat"><span class="badge outline">Technology</span></div>
+          <div class="article-title">Why Personalisation at Scale Still Fails Most Hotel Groups</div>
+          <div class="article-excerpt">Three operational reasons AI personalisation pilots rarely survive contact with a 200-property portfolio.</div>
+          <div class="article-meta"><img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=100&auto=format&fit=crop" alt=""><span>Richard Valtr · 6 min read</span></div>
+        </div>
+      </a>
+      <a href="article.html" class="card article-card">
+        <div class="article-img"><img src="https://images.unsplash.com/photo-1542317854-fd8c2c5d1ba6?q=80&w=600&auto=format&fit=crop" alt=""></div>
+        <div class="article-content">
+          <div class="article-cat"><span class="badge outline">Investment</span></div>
+          <div class="article-title">How Guest Experience Metrics Are Reshaping Deal Underwriting</div>
+          <div class="article-excerpt">Private equity buyers are now pricing NPS and loyalty retention directly into valuation models.</div>
+          <div class="article-meta"><img src="https://images.unsplash.com/photo-1519345182560-3f2917c472ef?q=80&w=100&auto=format&fit=crop" alt=""><span>Jose Silva · 8 min read</span></div>
+        </div>
+      </a>
+      <a href="article.html" class="card article-card">
+        <div class="article-img"><img src="https://images.unsplash.com/photo-1551776235-dde6d482980b?q=80&w=600&auto=format&fit=crop" alt=""></div>
+        <div class="article-content">
+          <div class="article-cat"><span class="badge outline">Operations</span></div>
+          <div class="article-title">The Frictionless Arrival: Five Brands Doing It Right</div>
+          <div class="article-excerpt">Case studies from Marriott, Accor and three independent groups eliminating check-in friction.</div>
+          <div class="article-meta"><img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=100&auto=format&fit=crop" alt=""><span>John Smith · 5 min read</span></div>
+        </div>
+      </a>
+      <a href="article.html" class="card article-card">
+        <div class="article-img"><img src="https://images.unsplash.com/photo-1455587734955-081b22074882?q=80&w=600&auto=format&fit=crop" alt=""></div>
+        <div class="article-content">
+          <div class="article-cat"><span class="badge outline">Leadership</span></div>
+          <div class="article-title">Making the Boardroom Case for Experience Investment</div>
+          <div class="article-excerpt">A practical framework for translating guest experience initiatives into language a CFO will fund.</div>
+          <div class="article-meta"><img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?q=80&w=100&auto=format&fit=crop" alt=""><span>Sarah Brown · 7 min read</span></div>
+        </div>
+      </a>
+      <a href="article.html" class="card article-card">
+        <div class="article-img"><img src="https://images.unsplash.com/photo-1496417263034-38ec4f0b665a?q=80&w=600&auto=format&fit=crop" alt=""></div>
+        <div class="article-content">
+          <div class="article-cat"><span class="badge outline">Brand</span></div>
+          <div class="article-title">What Luxury Guests Actually Notice (and What They Don't)</div>
+          <div class="article-excerpt">Eye-tracking and sentiment data from 4,000 luxury stays challenge assumptions about service touchpoints.</div>
+          <div class="article-meta"><img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=100&auto=format&fit=crop" alt=""><span>Heather Bader · 9 min read</span></div>
+        </div>
+      </a>
+      <a href="article.html" class="card article-card">
+        <div class="article-img"><img src="https://images.unsplash.com/photo-1551038247-3d9af20df552?q=80&w=600&auto=format&fit=crop" alt=""></div>
+        <div class="article-content">
+          <div class="article-cat"><span class="badge outline">Technology</span></div>
+          <div class="article-title">Inside Accor's Group-Wide Data Unification Project</div>
+          <div class="article-excerpt">An inside look at the eighteen-month effort to unify guest data across 45 brands.</div>
+          <div class="article-meta"><img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=100&auto=format&fit=crop" alt=""><span>Sebastien Bazin · 10 min read</span></div>
+        </div>
+      </a>
+    </div>
+
+    <div class="pagination">
+      <div class="page-num active">1</div><div class="page-num">2</div><div class="page-num">3</div><div class="page-num">→</div>
+    </div>
+  </div>
+</section>
+
+<section class="tight" style="background:var(--bg-light);">
+  <div class="wrap">
+    <div class="section-head"><div><div class="eyebrow">Resources</div><h2 style="font-size:32px;">Reports, Whitepapers & Video</h2></div></div>
+    <div class="resource-row">
+      <div class="card resource-card">
+        <div class="resource-type-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg></div>
+        <h4>Industry Reports</h4>
+        <p>Annual and quarterly research on the state of guest experience across global hospitality.</p>
+        <a href="#" class="view-all">Browse Reports →</a>
+      </div>
+      <div class="card resource-card">
+        <div class="resource-type-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2"/></svg></div>
+        <h4>Video Interviews</h4>
+        <p>Conversations with summit speakers, recorded live and on location.</p>
+        <a href="#" class="view-all">Watch Now →</a>
+      </div>
+      <div class="card resource-card">
+        <div class="resource-type-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2M12 19v4M8 23h8"/></svg></div>
+        <h4>The Guest Experience Podcast</h4>
+        <p>Monthly conversations with operators, investors and technologists. New episodes the first Tuesday of each month.</p>
+        <a href="#" class="view-all">Listen Now →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="tight">
+  <div class="wrap">
+    <div class="newsletter-cta">
+      <h2>Stay Ahead of the Industry</h2>
+      <p>Join 12,000+ hospitality leaders who get our best insights, first. One email a month, no spam.</p>
+      <form class="newsletter-form">
+        <input type="email" placeholder="Your work email">
+        <button class="btn btn-primary">Subscribe →</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo">THE GUEST EXPERIENCE<br><span class="accent">SUMMIT</span></div>
+        <p class="footer-desc">The world's first exclusively C-level summit where hospitality leaders shape the future of guest experience.</p>
+      </div>
+      <div class="footer-col"><h4>Event</h4><ul><li><a href="agenda.html">Agenda</a></li><li><a href="speakers.html">Speakers</a></li><li><a href="networking.html">Networking</a></li><li><a href="insights.html">Insights</a></li></ul></div>
+      <div class="footer-col"><h4>Attend</h4><ul><li><a href="request-invitation.html">Request Invitation</a></li><li><a href="request-invitation.html">Eligibility</a></li><li><a href="contact.html">FAQ</a></li></ul></div>
+      <div class="footer-col"><h4>Partner</h4><ul><li><a href="partners.html">Sponsorship</a></li><li><a href="partners.html">Partners</a></li><li><a href="partners.html">Case Studies</a></li></ul></div>
+      <div class="footer-col"><h4>Contact</h4><ul><li><a href="contact.html">The Landmark, London</a></li><li><a href="agenda.html">28 January 2027</a></li><li><a href="contact.html">Get in Touch</a></li></ul></div>
+    </div>
+    <div class="footer-bottom"><span>© 2027 The Guest Experience Summit. All rights reserved.</span><span>Privacy Policy · Terms</span></div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>

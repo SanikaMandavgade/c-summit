@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — The Guest Experience Summit</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/shared.css">
+<style>
+  .contact-cards{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;}
+  .contact-card{padding:28px;text-align:center;}
+  .contact-icon{width:48px;height:48px;border-radius:50%;background:var(--primary-tint);color:var(--primary);display:flex;align-items:center;justify-content:center;margin:0 auto 16px;}
+  .contact-card h4{font-size:15px;margin-bottom:8px;}
+  .contact-card p{font-size:13px;color:var(--text-secondary);margin-bottom:4px;}
+  .contact-card a{color:var(--primary);font-weight:700;font-size:13px;}
+
+  .contact-layout{display:grid;grid-template-columns:1fr 1.2fr;gap:56px;align-items:flex-start;}
+  .office-card{padding:28px;display:flex;gap:16px;margin-bottom:16px;}
+  .office-icon{width:44px;height:44px;border-radius:10px;background:var(--secondary);color:#fff;display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+  .office-name{font-weight:700;font-size:15px;}
+  .office-addr{font-size:13px;color:var(--text-secondary);margin-top:4px;line-height:1.6;}
+
+  .map-embed{
+    border-radius:var(--radius);overflow:hidden;aspect-ratio:16/9;background:var(--bg-light);
+    display:flex;align-items:center;justify-content:center;border:1px solid var(--border);margin-top:24px;
+  }
+
+  .faq-item{border-top:1px solid var(--border);padding:24px 0;}
+  .faq-item:last-child{border-bottom:1px solid var(--border);}
+  .faq-q{font-weight:700;font-size:16px;display:flex;justify-content:space-between;cursor:pointer;align-items:center;}
+  .faq-a{font-size:14px;color:var(--text-secondary);margin-top:12px;line-height:1.6;max-width:680px;}
+
+  @media (max-width:1000px){
+    .contact-cards{grid-template-columns:repeat(2,1fr);}
+    .contact-layout{grid-template-columns:1fr;}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <nav>
+    <a href="index.html" class="logo">THE GUEST<br>EXPERIENCE<br><span class="accent">SUMMIT</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="agenda.html">Agenda</a></li>
+      <li><a href="speakers.html">Speakers</a></li>
+      <li><a href="partners.html">Partners</a></li>
+      <li><a href="insights.html">Insights</a></li>
+      <li><a href="networking.html">Networking</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+    <a href="request-invitation.html" class="btn btn-primary">Request Invitation</a>
+  </nav>
+</header>
+
+<section class="page-hero">
+  <div class="wrap">
+    <div class="eyebrow">Contact</div>
+    <h1>Get in Touch</h1>
+    <p class="sub">Whether you're applying to attend, exploring partnership, or have a question about the agenda — our team typically replies within one business day.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="contact-cards">
+      <div class="card contact-card">
+        <div class="contact-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg></div>
+        <h4>Delegate Enquiries</h4>
+        <p>Invitations, eligibility, registration</p>
+        <a href="mailto:attend@guestexperiencesummit.com">attend@guestexperiencesummit.com</a>
+      </div>
+      <div class="card contact-card">
+        <div class="contact-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></div>
+        <h4>Partnerships</h4>
+        <p>Sponsorship and packages</p>
+        <a href="mailto:partners@guestexperiencesummit.com">partners@guestexperiencesummit.com</a>
+      </div>
+      <div class="card contact-card">
+        <div class="contact-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2M12 19v4M8 23h8"/></svg></div>
+        <h4>Speaker Proposals</h4>
+        <p>Submit a speaking proposal</p>
+        <a href="mailto:speakers@guestexperiencesummit.com">speakers@guestexperiencesummit.com</a>
+      </div>
+      <div class="card contact-card">
+        <div class="contact-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg></div>
+        <h4>Press & Media</h4>
+        <p>Media accreditation, interviews</p>
+        <a href="mailto:press@guestexperiencesummit.com">press@guestexperiencesummit.com</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="tight" style="background:var(--bg-light);">
+  <div class="wrap">
+    <div class="contact-layout">
+      <div>
+        <div class="eyebrow">Our Offices</div>
+        <h2 style="font-size:28px;text-transform:uppercase;margin:14px 0 24px;">Where to Find Us</h2>
+        <div class="office-card card">
+          <div class="office-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+          <div><div class="office-name">London (HQ)</div><div class="office-addr">33 Park Lane<br>Mayfair, London W1K 1RG</div></div>
+        </div>
+        <div class="office-card card">
+          <div class="office-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+          <div><div class="office-name">Dubai</div><div class="office-addr">DIFC Gate Village 8<br>Dubai, UAE</div></div>
+        </div>
+        <div class="map-embed">
+          <span style="color:var(--text-secondary);font-size:13px;">Interactive map — The Landmark, London</span>
+        </div>
+      </div>
+
+      <form class="form-card">
+        <h3 style="font-size:20px;text-transform:uppercase;margin-bottom:24px;">Send Us a Message</h3>
+        <div class="form-grid">
+          <div class="form-field"><label>Full Name <span class="req">*</span></label><input type="text" placeholder="Jane Doe"></div>
+          <div class="form-field"><label>Work Email <span class="req">*</span></label><input type="email" placeholder="jane@company.com"></div>
+          <div class="form-field full"><label>Department <span class="req">*</span></label>
+            <select><option>Delegate Enquiries</option><option>Partnerships</option><option>Speaker Proposals</option><option>Press & Media</option><option>Other</option></select>
+          </div>
+          <div class="form-field full"><label>Message <span class="req">*</span></label><textarea placeholder="How can we help?"></textarea></div>
+        </div>
+        <button class="btn btn-primary" style="margin-top:20px;width:100%;justify-content:center;">Send Message →</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="section-head"><div><div class="eyebrow">FAQ</div><h2 style="font-size:32px;">Common Questions</h2></div></div>
+    <div style="max-width:780px;">
+      <div class="faq-item">
+        <div class="faq-q">Who is eligible to attend? <span>+</span></div>
+        <div class="faq-a">The Summit is exclusively for C-level executives, founders and senior decision-makers at hospitality groups, investment firms and technology providers serving the industry. All applications are reviewed individually.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Is there a ticket price? <span>+</span></div>
+        <div class="faq-a">There is no public ticket sale. Attendance is by invitation following a short qualification application — see the Request Invitation page for details.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">How long does the application review take? <span>+</span></div>
+        <div class="faq-a">Most applicants hear back within five business days. We review applications on a rolling basis as capacity allows.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Can I bring a colleague? <span>+</span></div>
+        <div class="faq-a">Each invitation is individual and non-transferable. Colleagues who also meet the eligibility criteria are welcome to apply separately.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Do you offer group rates for partners? <span>+</span></div>
+        <div class="faq-a">Yes — partnership packages include a set number of delegate passes. See the Partners page for full package details.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="tight" style="background:var(--bg-light);">
+  <div class="wrap">
+    <div class="cta-banner">
+      <div class="cta-banner-item">
+        <div class="cta-banner-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg></div>
+        <div><div class="cta-banner-title">Ready to Apply?</div><div class="cta-banner-sub">Start your invitation application in under five minutes</div></div>
+        <a href="request-invitation.html" class="cta-banner-arrow">→</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo">THE GUEST EXPERIENCE<br><span class="accent">SUMMIT</span></div>
+        <p class="footer-desc">The world's first exclusively C-level summit where hospitality leaders shape the future of guest experience.</p>
+      </div>
+      <div class="footer-col"><h4>Event</h4><ul><li><a href="agenda.html">Agenda</a></li><li><a href="speakers.html">Speakers</a></li><li><a href="networking.html">Networking</a></li><li><a href="insights.html">Insights</a></li></ul></div>
+      <div class="footer-col"><h4>Attend</h4><ul><li><a href="request-invitation.html">Request Invitation</a></li><li><a href="request-invitation.html">Eligibility</a></li><li><a href="contact.html">FAQ</a></li></ul></div>
+      <div class="footer-col"><h4>Partner</h4><ul><li><a href="partners.html">Sponsorship</a></li><li><a href="partners.html">Partners</a></li><li><a href="partners.html">Case Studies</a></li></ul></div>
+      <div class="footer-col"><h4>Contact</h4><ul><li><a href="contact.html">The Landmark, London</a></li><li><a href="agenda.html">28 January 2027</a></li><li><a href="contact.html">Get in Touch</a></li></ul></div>
+    </div>
+    <div class="footer-bottom"><span>© 2027 The Guest Experience Summit. All rights reserved.</span><span>Privacy Policy · Terms</span></div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>

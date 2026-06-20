@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About — The Guest Experience Summit</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/shared.css">
+<style>
+  .mv-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;}
+  .mv-card{padding:40px;}
+  .mv-icon{width:48px;height:48px;border-radius:12px;background:var(--primary-tint);color:var(--primary);display:flex;align-items:center;justify-content:center;margin-bottom:20px;}
+  .mv-card h3{font-size:24px;text-transform:uppercase;margin-bottom:14px;}
+  .mv-card p{color:var(--text-secondary);font-size:16px;line-height:1.7;}
+
+  .story-layout{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center;}
+  .story-img{border-radius:var(--radius);overflow:hidden;aspect-ratio:4/3.3;}
+  .story-img img{width:100%;height:100%;object-fit:cover;}
+  .story-content p{color:var(--text-secondary);font-size:16px;line-height:1.75;margin-bottom:18px;}
+
+  .team-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;}
+  .team-card{text-align:center;}
+  .team-photo{aspect-ratio:1/1;border-radius:var(--radius);overflow:hidden;margin-bottom:14px;}
+  .team-photo img{width:100%;height:100%;object-fit:cover;}
+  .team-name{font-weight:700;font-size:15px;}
+  .team-role{font-size:13px;color:var(--primary);font-weight:700;margin-top:2px;}
+
+  .timeline-vertical{position:relative;padding-left:40px;}
+  .timeline-vertical::before{content:"";position:absolute;left:7px;top:6px;bottom:6px;width:2px;background:var(--border);}
+  .tl-v-item{position:relative;padding-bottom:48px;}
+  .tl-v-item:last-child{padding-bottom:0;}
+  .tl-v-dot{position:absolute;left:-40px;top:4px;width:16px;height:16px;border-radius:50%;background:var(--primary);border:3px solid #fff;box-shadow:0 0 0 1.5px var(--primary);}
+  .tl-v-year{font-size:13px;font-weight:700;color:var(--primary);text-transform:uppercase;letter-spacing:.5px;margin-bottom:6px;}
+  .tl-v-title{font-size:19px;font-weight:700;margin-bottom:8px;}
+  .tl-v-desc{font-size:14px;color:var(--text-secondary);line-height:1.6;max-width:560px;}
+
+  .past-stats{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;}
+
+  @media (max-width:1000px){
+    .mv-grid{grid-template-columns:1fr;}
+    .story-layout{grid-template-columns:1fr;}
+    .team-grid{grid-template-columns:repeat(2,1fr);}
+    .past-stats{grid-template-columns:repeat(2,1fr);}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <nav>
+    <a href="index.html" class="logo">THE GUEST<br>EXPERIENCE<br><span class="accent">SUMMIT</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="agenda.html">Agenda</a></li>
+      <li><a href="speakers.html">Speakers</a></li>
+      <li><a href="partners.html">Partners</a></li>
+      <li><a href="insights.html">Insights</a></li>
+      <li><a href="networking.html">Networking</a></li>
+      <li><a href="about.html" class="active">About</a></li>
+    </ul>
+    <a href="request-invitation.html" class="btn btn-primary">Request Invitation</a>
+  </nav>
+</header>
+
+<section class="page-hero">
+  <div class="wrap">
+    <div class="eyebrow">About the Summit</div>
+    <h1>Built by Operators,<br>for Operators</h1>
+    <p class="sub">The Guest Experience Summit exists because the people closest to guest experience decisions had nowhere built specifically for them. We fixed that.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="mv-grid">
+      <div class="card mv-card">
+        <div class="mv-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5M2 12l10 5 10-5"/></svg></div>
+        <h3>Our Mission</h3>
+        <p>To give hospitality's most senior leaders one day a year that's entirely free of sales pitches and trade-show noise — built instead around the conversations, data and relationships that actually move guest experience forward.</p>
+      </div>
+      <div class="card mv-card">
+        <div class="mv-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7z"/></svg></div>
+        <h3>Our Vision</h3>
+        <p>A hospitality industry where guest experience sits permanently at the boardroom table — measured with the same rigour as revenue, and resourced accordingly.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="tight" style="background:var(--bg-light);">
+  <div class="wrap">
+    <div class="story-layout">
+      <div class="story-img">
+        <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?q=80&w=800&auto=format&fit=crop" alt="Conference audience">
+      </div>
+      <div class="story-content">
+        <div class="eyebrow">Why This Summit Exists</div>
+        <h2 style="font-size:32px;text-transform:uppercase;margin:14px 0 18px;">A Gap We Kept Hearing About</h2>
+        <p>In conversations with hotel group CEOs and COOs over several years, the same complaint surfaced again and again: existing hospitality conferences had become too broad, too vendor-heavy, and too junior in their actual attendee mix to justify a CEO's calendar.</p>
+        <p>The Guest Experience Summit was founded to solve that specific problem — a single day, exclusively C-level, with an agenda built around the one theme that every hospitality executive now agrees is existential: the guest experience itself.</p>
+        <p>We launched in London in 2024 with 90 attendees. This year, we're expecting 250 — still small enough that everyone in the room genuinely belongs there.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="section-head">
+      <div><div class="eyebrow">Leadership</div><h2>The Team Behind<br>the Summit</h2></div>
+    </div>
+    <div class="team-grid">
+      <div class="team-card">
+        <div class="team-photo"><img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?q=80&w=400&auto=format&fit=crop" alt="Eleanor Hughes"></div>
+        <div class="team-name">Eleanor Hughes</div>
+        <div class="team-role">Founder & Summit Director</div>
+      </div>
+      <div class="team-card">
+        <div class="team-photo"><img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=400&auto=format&fit=crop" alt="Marcus Webb"></div>
+        <div class="team-name">Marcus Webb</div>
+        <div class="team-role">Head of Content & Programming</div>
+      </div>
+      <div class="team-card">
+        <div class="team-photo"><img src="https://images.unsplash.com/photo-1519345182560-3f2917c472ef?q=80&w=400&auto=format&fit=crop" alt="Priya Anand"></div>
+        <div class="team-name">Priya Anand</div>
+        <div class="team-role">Head of Partnerships</div>
+      </div>
+      <div class="team-card">
+        <div class="team-photo"><img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=400&auto=format&fit=crop" alt="Tom Whitfield"></div>
+        <div class="team-name">Tom Whitfield</div>
+        <div class="team-role">Head of Delegate Relations</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="tight" style="background:var(--bg-light);">
+  <div class="wrap">
+    <div class="section-head"><div><div class="eyebrow">History</div><h2 style="font-size:32px;">Our Timeline</h2></div></div>
+    <div class="timeline-vertical">
+      <div class="tl-v-item">
+        <div class="tl-v-dot"></div>
+        <div class="tl-v-year">2024</div>
+        <div class="tl-v-title">First Edition, London</div>
+        <div class="tl-v-desc">90 C-level attendees, one day, one track. Proof that the format worked.</div>
+      </div>
+      <div class="tl-v-item">
+        <div class="tl-v-dot"></div>
+        <div class="tl-v-year">2025</div>
+        <div class="tl-v-title">Two-Track Programme Launched</div>
+        <div class="tl-v-desc">Attendance grew to 160. Introduced Track A (Technology) and Track B (Investment & Operations).</div>
+      </div>
+      <div class="tl-v-item">
+        <div class="tl-v-dot"></div>
+        <div class="tl-v-year">2026</div>
+        <div class="tl-v-title">Executive Roundtables Introduced</div>
+        <div class="tl-v-desc">210 attendees. Added structured roundtables and the first hosted Summit Dinner.</div>
+      </div>
+      <div class="tl-v-item">
+        <div class="tl-v-dot"></div>
+        <div class="tl-v-year">2027</div>
+        <div class="tl-v-title">250+ Executives, 12+ Countries</div>
+        <div class="tl-v-desc">The largest edition yet, at The Landmark London on 28 January.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="section-head"><div><div class="eyebrow">Past Editions</div><h2 style="font-size:32px;">By the Numbers</h2></div></div>
+    <div class="past-stats">
+      <div class="card" style="padding:28px;text-align:center;"><div class="stat-num" style="font-size:32px;">3</div><div class="stat-label">Editions Held</div></div>
+      <div class="card" style="padding:28px;text-align:center;"><div class="stat-num" style="font-size:32px;">460+</div><div class="stat-label">Alumni Executives</div></div>
+      <div class="card" style="padding:28px;text-align:center;"><div class="stat-num" style="font-size:32px;">94%</div><div class="stat-label">Would Attend Again</div></div>
+      <div class="card" style="padding:28px;text-align:center;"><div class="stat-num" style="font-size:32px;">31</div><div class="stat-label">Countries Reached</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="tight" style="background:var(--bg-light);">
+  <div class="wrap">
+    <div class="cta-final" style="background:var(--secondary);">
+      <h2>Join the Next Edition</h2>
+      <p>Be part of the room where hospitality's biggest decisions get shaped.</p>
+      <div class="cta-final-row">
+        <a href="request-invitation.html" class="btn btn-primary">Request an Invitation →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo">THE GUEST EXPERIENCE<br><span class="accent">SUMMIT</span></div>
+        <p class="footer-desc">The world's first exclusively C-level summit where hospitality leaders shape the future of guest experience.</p>
+      </div>
+      <div class="footer-col"><h4>Event</h4><ul><li><a href="agenda.html">Agenda</a></li><li><a href="speakers.html">Speakers</a></li><li><a href="networking.html">Networking</a></li><li><a href="insights.html">Insights</a></li></ul></div>
+      <div class="footer-col"><h4>Attend</h4><ul><li><a href="request-invitation.html">Request Invitation</a></li><li><a href="request-invitation.html">Eligibility</a></li><li><a href="contact.html">FAQ</a></li></ul></div>
+      <div class="footer-col"><h4>Partner</h4><ul><li><a href="partners.html">Sponsorship</a></li><li><a href="partners.html">Partners</a></li><li><a href="partners.html">Case Studies</a></li></ul></div>
+      <div class="footer-col"><h4>Contact</h4><ul><li><a href="contact.html">The Landmark, London</a></li><li><a href="agenda.html">28 January 2027</a></li><li><a href="contact.html">Get in Touch</a></li></ul></div>
+    </div>
+    <div class="footer-bottom"><span>© 2027 The Guest Experience Summit. All rights reserved.</span><span>Privacy Policy · Terms</span></div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>

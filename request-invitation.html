@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Request an Invitation — The Guest Experience Summit</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/shared.css">
+<style>
+  .ri-hero{padding:72px 0;border-bottom:1px solid var(--border);background:var(--bg-light);}
+  .ri-hero-grid{display:grid;grid-template-columns:1.1fr 1fr;gap:56px;align-items:center;}
+  .ri-hero h1{font-size:52px;text-transform:uppercase;}
+  .ri-hero p.sub{font-size:17px;color:var(--text-secondary);margin-top:18px;max-width:480px;}
+  .ri-trust-row{display:flex;gap:32px;margin-top:32px;flex-wrap:wrap;}
+  .ri-trust-item{display:flex;align-items:center;gap:8px;font-size:13px;font-weight:700;color:var(--text-secondary);}
+  .ri-trust-item svg{color:var(--success);}
+  .ri-hero-img{border-radius:var(--radius);overflow:hidden;aspect-ratio:4/3.4;}
+  .ri-hero-img img{width:100%;height:100%;object-fit:cover;}
+
+  .criteria-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;}
+  .criteria-card{padding:28px;display:flex;gap:16px;}
+  .criteria-icon{width:40px;height:40px;border-radius:10px;background:var(--primary-tint);color:var(--primary);display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+  .criteria-card h4{font-size:15px;margin-bottom:6px;}
+  .criteria-card p{font-size:13px;color:var(--text-secondary);}
+
+  .process-row{display:grid;grid-template-columns:repeat(4,1fr);gap:0;position:relative;}
+  .process-row::before{content:"";position:absolute;top:24px;left:12%;right:12%;height:2px;background:var(--border);}
+  .process-step{text-align:center;position:relative;padding:0 16px;}
+  .process-num{
+    width:48px;height:48px;border-radius:50%;background:var(--secondary);color:#fff;font-weight:800;
+    display:flex;align-items:center;justify-content:center;margin:0 auto 18px;position:relative;z-index:2;font-size:16px;
+  }
+  .process-step h4{font-size:15px;margin-bottom:8px;}
+  .process-step p{font-size:13px;color:var(--text-secondary);}
+
+  /* Application form */
+  .form-progress{display:flex;gap:8px;margin-bottom:32px;}
+  .form-progress-step{flex:1;height:4px;border-radius:2px;background:var(--border);}
+  .form-progress-step.done{background:var(--primary);}
+  .form-section-title{font-size:13px;text-transform:uppercase;letter-spacing:1px;font-weight:700;color:var(--primary);margin:32px 0 18px;}
+  .form-section-title:first-child{margin-top:0;}
+  .radio-group{display:flex;gap:10px;flex-wrap:wrap;}
+  .radio-pill{
+    padding:11px 18px;border-radius:999px;border:1.5px solid var(--border);font-size:13px;font-weight:600;
+    color:var(--text-secondary);cursor:pointer;
+  }
+  .radio-pill.selected{border-color:var(--primary);color:var(--primary);background:var(--primary-tint);}
+
+  .faq-item{border-top:1px solid var(--border);padding:22px 0;}
+  .faq-item:last-child{border-bottom:1px solid var(--border);}
+  .faq-q{font-weight:700;font-size:15px;display:flex;justify-content:space-between;}
+  .faq-a{font-size:14px;color:var(--text-secondary);margin-top:10px;line-height:1.6;max-width:680px;}
+
+  @media (max-width:1000px){
+    .ri-hero-grid{grid-template-columns:1fr;}
+    .ri-hero h1{font-size:34px;}
+    .criteria-grid{grid-template-columns:1fr;}
+    .process-row{grid-template-columns:1fr 1fr;gap:32px;}
+    .process-row::before{display:none;}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <nav>
+    <a href="index.html" class="logo">THE GUEST<br>EXPERIENCE<br><span class="accent">SUMMIT</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="agenda.html">Agenda</a></li>
+      <li><a href="speakers.html">Speakers</a></li>
+      <li><a href="partners.html">Partners</a></li>
+      <li><a href="insights.html">Insights</a></li>
+      <li><a href="networking.html">Networking</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+    <a href="request-invitation.html" class="btn btn-primary">Request Invitation</a>
+  </nav>
+</header>
+
+<section class="ri-hero">
+  <div class="wrap">
+    <div class="ri-hero-grid">
+      <div>
+        <div class="eyebrow">Request an Invitation</div>
+        <h1>Join 250+ C-Level<br>Hospitality Leaders</h1>
+        <p class="sub">Attendance is by application, not ticket purchase. Tell us about your role and we'll confirm eligibility within five business days.</p>
+        <div class="ri-trust-row">
+          <div class="ri-trust-item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> No cost to apply</div>
+          <div class="ri-trust-item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> 5-day review</div>
+          <div class="ri-trust-item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> 5 minutes to complete</div>
+        </div>
+      </div>
+      <div class="ri-hero-img">
+        <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?q=80&w=800&auto=format&fit=crop" alt="Executive conference networking">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="tight">
+  <div class="wrap">
+    <div class="section-head"><div><div class="eyebrow">Who Should Attend</div><h2 style="font-size:32px;">Eligibility Criteria</h2></div></div>
+    <div class="criteria-grid">
+      <div class="card criteria-card">
+        <div class="criteria-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg></div>
+        <div><h4>Seniority</h4><p>CEO, COO, CMO, Founder, or equivalent C-suite title at a qualifying organisation.</p></div>
+      </div>
+      <div class="card criteria-card">
+        <div class="criteria-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21h18M5 21V7l8-4v18M19 21V11l-6-4"/></svg></div>
+        <div><h4>Organisation Type</h4><p>Hotel groups, hospitality brands, investment firms, or technology companies serving the sector.</p></div>
+      </div>
+      <div class="card criteria-card">
+        <div class="criteria-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M2 12h20"/></svg></div>
+        <div><h4>Budget Authority</h4><p>Direct or significant influence over guest experience, technology, or operations budget.</p></div>
+      </div>
+      <div class="card criteria-card">
+        <div class="criteria-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></div>
+        <div><h4>Team Size</h4><p>Organisations with 100+ employees or managing 10+ properties are prioritised, though not required.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="tight" style="background:var(--bg-light);">
+  <div class="wrap">
+    <div class="past-stats" style="display:grid;grid-template-columns:repeat(4,1fr);gap:24px;">
+      <div class="card" style="padding:28px;text-align:center;"><div style="font-size:30px;font-weight:800;">250+</div><div class="stat-label">C-Level Executives</div></div>
+      <div class="card" style="padding:28px;text-align:center;"><div style="font-size:30px;font-weight:800;">31%</div><div class="stat-label">Acceptance Rate</div></div>
+      <div class="card" style="padding:28px;text-align:center;"><div style="font-size:30px;font-weight:800;">94%</div><div class="stat-label">Would Attend Again</div></div>
+      <div class="card" style="padding:28px;text-align:center;"><div style="font-size:30px;font-weight:800;">12+</div><div class="stat-label">Countries Represented</div></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="section-head"><div><div class="eyebrow">Testimonials</div><h2 style="font-size:32px;">From Past Attendees</h2></div></div>
+    <div class="case-grid" style="display:grid;grid-template-columns:repeat(2,1fr);gap:24px;">
+      <div class="card" style="padding:32px;">
+        <div style="font-size:17px;font-weight:600;line-height:1.5;margin-bottom:20px;">"The only event I've kept on my calendar three years running. Every conversation in that room is worth having."</div>
+        <div style="display:flex;align-items:center;gap:12px;">
+          <img src="https://images.unsplash.com/photo-1519345182560-3f2917c472ef?q=80&w=100&auto=format&fit=crop" style="width:44px;height:44px;border-radius:50%;object-fit:cover;" alt="">
+          <div><div style="font-weight:700;font-size:14px;">Jose Silva</div><div style="font-size:12px;color:var(--text-secondary);">CEO, Jumeirah Group</div></div>
+        </div>
+      </div>
+      <div class="card" style="padding:32px;">
+        <div style="font-size:17px;font-weight:600;line-height:1.5;margin-bottom:20px;">"Small enough to be useful, senior enough to matter. I left with three concrete initiatives and five new relationships."</div>
+        <div style="display:flex;align-items:center;gap:12px;">
+          <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?q=80&w=100&auto=format&fit=crop" style="width:44px;height:44px;border-radius:50%;object-fit:cover;" alt="">
+          <div><div style="font-weight:700;font-size:14px;">Sarah Brown</div><div style="font-size:12px;color:var(--text-secondary);">COO, Hilton</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="tight" style="background:var(--bg-light);">
+  <div class="wrap">
+    <div class="section-head"><div><div class="eyebrow">Process</div><h2 style="font-size:32px;">How It Works</h2></div></div>
+    <div class="process-row">
+      <div class="process-step"><div class="process-num">1</div><h4>Submit Application</h4><p>Complete the form below — takes about five minutes.</p></div>
+      <div class="process-step"><div class="process-num">2</div><h4>Eligibility Review</h4><p>Our team reviews your role and organisation against criteria.</p></div>
+      <div class="process-step"><div class="process-num">3</div><h4>Decision Notified</h4><p>You'll hear back by email within five business days.</p></div>
+      <div class="process-step"><div class="process-num">4</div><h4>Confirm Your Seat</h4><p>Approved applicants receive a registration link to confirm.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="apply">
+  <div class="wrap">
+    <div style="max-width:760px;margin:0 auto;">
+      <div style="text-align:center;margin-bottom:40px;">
+        <div class="eyebrow">Application</div>
+        <h2 style="font-size:36px;text-transform:uppercase;margin:14px 0;">Request Your Invitation</h2>
+        <p style="color:var(--text-secondary);font-size:16px;">Fields marked <span class="req" style="color:var(--primary);">*</span> are required for eligibility review.</p>
+      </div>
+
+      <form class="form-card">
+        <div class="form-progress">
+          <div class="form-progress-step done"></div><div class="form-progress-step done"></div>
+          <div class="form-progress-step"></div><div class="form-progress-step"></div>
+        </div>
+
+        <div class="form-section-title">Personal Details</div>
+        <div class="form-grid">
+          <div class="form-field"><label>Full Name <span class="req">*</span></label><input type="text" placeholder="Jane Doe"></div>
+          <div class="form-field"><label>Work Email <span class="req">*</span></label><input type="email" placeholder="jane@company.com"></div>
+          <div class="form-field"><label>Phone Number</label><input type="tel" placeholder="+44 20 0000 0000"></div>
+          <div class="form-field"><label>LinkedIn Profile <span class="req">*</span></label><input type="text" placeholder="linkedin.com/in/janedoe"></div>
+        </div>
+
+        <div class="form-section-title">Company Details</div>
+        <div class="form-grid">
+          <div class="form-field"><label>Company Name <span class="req">*</span></label><input type="text" placeholder="Company name"></div>
+          <div class="form-field"><label>Job Title <span class="req">*</span></label><input type="text" placeholder="Chief Executive Officer"></div>
+          <div class="form-field full"><label>Industry <span class="req">*</span></label>
+            <select><option>Hotel Group / Hospitality Brand</option><option>Hospitality Technology</option><option>Investment / Private Equity</option><option>Consulting / Advisory</option><option>Other</option></select>
+          </div>
+          <div class="form-field"><label>Company Size <span class="req">*</span></label>
+            <select><option>1–50 employees</option><option>51–250 employees</option><option>251–1,000 employees</option><option>1,000+ employees</option></select>
+          </div>
+          <div class="form-field"><label>Properties Managed (if applicable)</label>
+            <select><option>Not applicable</option><option>1–10</option><option>11–50</option><option>51–200</option><option>200+</option></select>
+          </div>
+        </div>
+
+        <div class="form-section-title">Role & Authority</div>
+        <div class="form-field full" style="margin-bottom:20px;">
+          <label>Do you hold direct or significant budget authority over guest experience, technology, or operations? <span class="req">*</span></label>
+          <div class="radio-group">
+            <div class="radio-pill selected">Yes — direct authority</div>
+            <div class="radio-pill">Yes — significant influence</div>
+            <div class="radio-pill">No</div>
+          </div>
+        </div>
+        <div class="form-field full">
+          <label>What are you hoping to get from attending? <span class="req">*</span></label>
+          <textarea placeholder="A few sentences on your goals for attending help us route your application correctly."></textarea>
+        </div>
+
+        <button class="btn btn-primary" style="margin-top:28px;width:100%;justify-content:center;">Submit Application →</button>
+        <p class="form-help" style="margin-top:14px;text-align:center;">By submitting, you agree to our Privacy Policy. We'll never share your details with third parties.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<section class="tight" style="background:var(--bg-light);">
+  <div class="wrap">
+    <div class="section-head"><div><div class="eyebrow">FAQ</div><h2 style="font-size:28px;">Before You Apply</h2></div></div>
+    <div style="max-width:780px;">
+      <div class="faq-item">
+        <div class="faq-q">What happens after I submit? <span>+</span></div>
+        <div class="faq-a">You'll receive an email confirmation immediately, followed by a decision within five business days. Approved applicants get a secure link to confirm their place.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">What if I don't meet every criterion? <span>+</span></div>
+        <div class="faq-a">Apply anyway. Criteria are reviewed holistically — strong influence over budget or strategy can offset a less senior title.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Is my application confidential? <span>+</span></div>
+        <div class="faq-a">Yes. Application details are reviewed only by the Summit's delegate relations team and are never shared externally.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo">THE GUEST EXPERIENCE<br><span class="accent">SUMMIT</span></div>
+        <p class="footer-desc">The world's first exclusively C-level summit where hospitality leaders shape the future of guest experience.</p>
+      </div>
+      <div class="footer-col"><h4>Event</h4><ul><li><a href="agenda.html">Agenda</a></li><li><a href="speakers.html">Speakers</a></li><li><a href="networking.html">Networking</a></li><li><a href="insights.html">Insights</a></li></ul></div>
+      <div class="footer-col"><h4>Attend</h4><ul><li><a href="request-invitation.html">Request Invitation</a></li><li><a href="request-invitation.html">Eligibility</a></li><li><a href="contact.html">FAQ</a></li></ul></div>
+      <div class="footer-col"><h4>Partner</h4><ul><li><a href="partners.html">Sponsorship</a></li><li><a href="partners.html">Partners</a></li><li><a href="partners.html">Case Studies</a></li></ul></div>
+      <div class="footer-col"><h4>Contact</h4><ul><li><a href="contact.html">The Landmark, London</a></li><li><a href="agenda.html">28 January 2027</a></li><li><a href="contact.html">Get in Touch</a></li></ul></div>
+    </div>
+    <div class="footer-bottom"><span>© 2027 The Guest Experience Summit. All rights reserved.</span><span>Privacy Policy · Terms</span></div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>

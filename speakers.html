@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Speakers — The Guest Experience Summit</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/shared.css">
+<style>
+  .speaker-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;}
+  .speaker-card{
+    background:#fff;border:1px solid var(--border);border-radius:var(--radius);overflow:hidden;
+    transition:box-shadow .2s ease, transform .2s ease;
+  }
+  .speaker-card:hover{box-shadow:0 20px 40px rgba(17,17,17,.08);transform:translateY(-4px);}
+  .speaker-photo{aspect-ratio:1/1;position:relative;background:var(--bg-light);}
+  .speaker-photo img{width:100%;height:100%;object-fit:cover;}
+  .speaker-logo-badge{
+    position:absolute;bottom:12px;left:12px;background:#fff;border-radius:6px;
+    padding:5px 9px;font-size:10px;font-weight:800;box-shadow:0 4px 10px rgba(0,0,0,.12);
+  }
+  .li-badge{
+    position:absolute;top:12px;right:12px;width:32px;height:32px;border-radius:50%;
+    background:#fff;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 10px rgba(0,0,0,.12);color:#0A66C2;
+  }
+  .speaker-info{padding:20px;}
+  .speaker-name{font-weight:700;font-size:16px;}
+  .speaker-role{font-size:13px;color:var(--primary);font-weight:700;margin-top:3px;}
+  .speaker-company{font-size:13px;color:var(--text-secondary);margin-top:1px;}
+  .speaker-cat{margin-top:14px;display:flex;gap:6px;flex-wrap:wrap;}
+
+  .featured-row{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-bottom:64px;}
+  .featured-card{
+    background:var(--secondary);border-radius:var(--radius);overflow:hidden;position:relative;aspect-ratio:4/5;
+  }
+  .featured-card img{width:100%;height:100%;object-fit:cover;opacity:.75;}
+  .featured-overlay{
+    position:absolute;inset:0;background:linear-gradient(to top, rgba(0,0,0,.85) 0%, rgba(0,0,0,.1) 55%);
+    display:flex;flex-direction:column;justify-content:flex-end;padding:28px;
+  }
+  .featured-tag{
+    position:absolute;top:20px;left:20px;background:var(--primary);color:#fff;font-size:11px;font-weight:700;
+    text-transform:uppercase;letter-spacing:.5px;padding:6px 12px;border-radius:6px;
+  }
+  .featured-overlay .name{color:#fff;font-weight:800;font-size:20px;}
+  .featured-overlay .role{color:var(--primary);font-weight:700;font-size:13px;margin-top:4px;}
+  .featured-overlay .company{color:#ccc;font-size:13px;}
+
+  @media (max-width:1100px){.speaker-grid{grid-template-columns:repeat(3,1fr);}.featured-row{grid-template-columns:1fr;}}
+  @media (max-width:640px){.speaker-grid{grid-template-columns:repeat(2,1fr);}}
+</style>
+</head>
+<body>
+
+<header>
+  <nav>
+    <a href="index.html" class="logo">THE GUEST<br>EXPERIENCE<br><span class="accent">SUMMIT</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="agenda.html">Agenda</a></li>
+      <li><a href="speakers.html" class="active">Speakers</a></li>
+      <li><a href="partners.html">Partners</a></li>
+      <li><a href="insights.html">Insights</a></li>
+      <li><a href="networking.html">Networking</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+    <a href="request-invitation.html" class="btn btn-primary">Request Invitation</a>
+  </nav>
+</header>
+
+<section class="page-hero">
+  <div class="wrap">
+    <div class="eyebrow">40+ Speakers</div>
+    <h1>Leaders. Visionaries.<br>Game Changers.</h1>
+    <p class="sub">The voices shaping the next decade of guest experience — CEOs, COOs, founders and investors from the world's leading hospitality groups.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="section-head" style="margin-bottom:32px;">
+      <div><div class="eyebrow">Featured</div><h2 style="font-size:32px;">Keynote Speakers</h2></div>
+    </div>
+    <div class="featured-row">
+      <a href="speaker-detail.html" class="featured-card">
+        <div class="featured-tag">Opening Keynote</div>
+        <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=600&auto=format&fit=crop" alt="John Smith">
+        <div class="featured-overlay">
+          <div class="name">John Smith</div>
+          <div class="role">CEO</div>
+          <div class="company">Marriott International</div>
+        </div>
+      </a>
+      <a href="speaker-detail.html" class="featured-card">
+        <div class="featured-tag">Closing Keynote</div>
+        <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?q=80&w=600&auto=format&fit=crop" alt="Sarah Brown">
+        <div class="featured-overlay">
+          <div class="name">Sarah Brown</div>
+          <div class="role">COO</div>
+          <div class="company">Hilton</div>
+        </div>
+      </a>
+      <a href="speaker-detail.html" class="featured-card">
+        <div class="featured-tag">Mainstage Panel</div>
+        <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=600&auto=format&fit=crop" alt="Sebastien Bazin">
+        <div class="featured-overlay">
+          <div class="name">Sebastien Bazin</div>
+          <div class="role">CEO</div>
+          <div class="company">Accor Group</div>
+        </div>
+      </a>
+    </div>
+
+    <div class="filter-bar">
+      <div class="filter-search">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+        <input type="text" placeholder="Search speakers or companies">
+      </div>
+      <div class="filter-chip active">All</div>
+      <div class="filter-chip">CEO</div>
+      <div class="filter-chip">COO</div>
+      <div class="filter-chip">CMO</div>
+      <div class="filter-chip">Technology</div>
+      <div class="filter-chip">Hospitality</div>
+      <div class="filter-chip">Investment</div>
+    </div>
+
+    <div class="speaker-grid">
+
+      <a href="speaker-detail.html" class="speaker-card">
+        <div class="speaker-photo">
+          <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=400&auto=format&fit=crop" alt="John Smith">
+          <div class="speaker-logo-badge">Marriott</div>
+          <div class="li-badge"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5v-14c0-2.76-2.24-5-5-5zm-11 19h-3v-9h3v9zm-1.5-10.28c-.97 0-1.75-.79-1.75-1.75s.78-1.75 1.75-1.75 1.75.79 1.75 1.75-.78 1.75-1.75 1.75zm13.5 10.28h-3v-4.5c0-1.07-.02-2.45-1.49-2.45-1.5 0-1.73 1.17-1.73 2.37v4.58h-3v-9h2.88v1.23h.04c.4-.76 1.38-1.56 2.84-1.56 3.04 0 3.6 2 3.6 4.59v4.74z"/></svg></div>
+        </div>
+        <div class="speaker-info">
+          <div class="speaker-name">John Smith</div>
+          <div class="speaker-role">CEO</div>
+          <div class="speaker-company">Marriott International</div>
+          <div class="speaker-cat"><span class="badge outline">CEO</span><span class="badge outline">Hospitality</span></div>
+        </div>
+      </a>
+
+      <a href="speaker-detail.html" class="speaker-card">
+        <div class="speaker-photo">
+          <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?q=80&w=400&auto=format&fit=crop" alt="Sarah Brown">
+          <div class="speaker-logo-badge">Hilton</div>
+          <div class="li-badge"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5v-14c0-2.76-2.24-5-5-5zm-11 19h-3v-9h3v9zm-1.5-10.28c-.97 0-1.75-.79-1.75-1.75s.78-1.75 1.75-1.75 1.75.79 1.75 1.75-.78 1.75-1.75 1.75zm13.5 10.28h-3v-4.5c0-1.07-.02-2.45-1.49-2.45-1.5 0-1.73 1.17-1.73 2.37v4.58h-3v-9h2.88v1.23h.04c.4-.76 1.38-1.56 2.84-1.56 3.04 0 3.6 2 3.6 4.59v4.74z"/></svg></div>
+        </div>
+        <div class="speaker-info">
+          <div class="speaker-name">Sarah Brown</div>
+          <div class="speaker-role">COO</div>
+          <div class="speaker-company">Hilton</div>
+          <div class="speaker-cat"><span class="badge outline">COO</span><span class="badge outline">Operations</span></div>
+        </div>
+      </a>
+
+      <a href="speaker-detail.html" class="speaker-card">
+        <div class="speaker-photo">
+          <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=400&auto=format&fit=crop" alt="Sebastien Bazin">
+          <div class="speaker-logo-badge">Accor</div>
+          <div class="li-badge"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5v-14c0-2.76-2.24-5-5-5zm-11 19h-3v-9h3v9zm-1.5-10.28c-.97 0-1.75-.79-1.75-1.75s.78-1.75 1.75-1.75 1.75.79 1.75 1.75-.78 1.75-1.75 1.75zm13.5 10.28h-3v-4.5c0-1.07-.02-2.45-1.49-2.45-1.5 0-1.73 1.17-1.73 2.37v4.58h-3v-9h2.88v1.23h.04c.4-.76 1.38-1.56 2.84-1.56 3.04 0 3.6 2 3.6 4.59v4.74z"/></svg></div>
+        </div>
+        <div class="speaker-info">
+          <div class="speaker-name">Sebastien Bazin</div>
+          <div class="speaker-role">CEO</div>
+          <div class="speaker-company">Accor Group</div>
+          <div class="speaker-cat"><span class="badge outline">CEO</span><span class="badge outline">Hospitality</span></div>
+        </div>
+      </a>
+
+      <a href="speaker-detail.html" class="speaker-card">
+        <div class="speaker-photo">
+          <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=400&auto=format&fit=crop" alt="Richard Valtr">
+          <div class="speaker-logo-badge">Mews</div>
+          <div class="li-badge"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5v-14c0-2.76-2.24-5-5-5zm-11 19h-3v-9h3v9zm-1.5-10.28c-.97 0-1.75-.79-1.75-1.75s.78-1.75 1.75-1.75 1.75.79 1.75 1.75-.78 1.75-1.75 1.75zm13.5 10.28h-3v-4.5c0-1.07-.02-2.45-1.49-2.45-1.5 0-1.73 1.17-1.73 2.37v4.58h-3v-9h2.88v1.23h.04c.4-.76 1.38-1.56 2.84-1.56 3.04 0 3.6 2 3.6 4.59v4.74z"/></svg></div>
+        </div>
+        <div class="speaker-info">
+          <div class="speaker-name">Richard Valtr</div>
+          <div class="speaker-role">Founder</div>
+          <div class="speaker-company">Mews</div>
+          <div class="speaker-cat"><span class="badge outline">Technology</span></div>
+        </div>
+      </a>
+
+      <a href="speaker-detail.html" class="speaker-card">
+        <div class="speaker-photo">
+          <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=400&auto=format&fit=crop" alt="Heather Bader">
+          <div class="speaker-logo-badge">IHG</div>
+          <div class="li-badge"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5v-14c0-2.76-2.24-5-5-5zm-11 19h-3v-9h3v9zm-1.5-10.28c-.97 0-1.75-.79-1.75-1.75s.78-1.75 1.75-1.75 1.75.79 1.75 1.75-.78 1.75-1.75 1.75zm13.5 10.28h-3v-4.5c0-1.07-.02-2.45-1.49-2.45-1.5 0-1.73 1.17-1.73 2.37v4.58h-3v-9h2.88v1.23h.04c.4-.76 1.38-1.56 2.84-1.56 3.04 0 3.6 2 3.6 4.59v4.74z"/></svg></div>
+        </div>
+        <div class="speaker-info">
+          <div class="speaker-name">Heather Bader</div>
+          <div class="speaker-role">Chief Brand Officer</div>
+          <div class="speaker-company">IHG Hotels & Resorts</div>
+          <div class="speaker-cat"><span class="badge outline">CMO</span><span class="badge outline">Brand</span></div>
+        </div>
+      </a>
+
+      <a href="speaker-detail.html" class="speaker-card">
+        <div class="speaker-photo">
+          <img src="https://images.unsplash.com/photo-1519345182560-3f2917c472ef?q=80&w=400&auto=format&fit=crop" alt="Jose Silva">
+          <div class="speaker-logo-badge">Jumeirah</div>
+          <div class="li-badge"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5v-14c0-2.76-2.24-5-5-5zm-11 19h-3v-9h3v9zm-1.5-10.28c-.97 0-1.75-.79-1.75-1.75s.78-1.75 1.75-1.75 1.75.79 1.75 1.75-.78 1.75-1.75 1.75zm13.5 10.28h-3v-4.5c0-1.07-.02-2.45-1.49-2.45-1.5 0-1.73 1.17-1.73 2.37v4.58h-3v-9h2.88v1.23h.04c.4-.76 1.38-1.56 2.84-1.56 3.04 0 3.6 2 3.6 4.59v4.74z"/></svg></div>
+        </div>
+        <div class="speaker-info">
+          <div class="speaker-name">Jose Silva</div>
+          <div class="speaker-role">CEO</div>
+          <div class="speaker-company">Jumeirah Group</div>
+          <div class="speaker-cat"><span class="badge outline">CEO</span><span class="badge outline">Investment</span></div>
+        </div>
+      </a>
+
+      <a href="speaker-detail.html" class="speaker-card">
+        <div class="speaker-photo">
+          <img src="https://images.unsplash.com/photo-1519345182560-3f2917c472ef?q=80&w=400&auto=format&fit=crop" alt="Amelia Torres">
+          <div class="speaker-logo-badge">Oracle</div>
+        </div>
+        <div class="speaker-info">
+          <div class="speaker-name">Amelia Torres</div>
+          <div class="speaker-role">VP, Hospitality Technology</div>
+          <div class="speaker-company">Oracle Hospitality</div>
+          <div class="speaker-cat"><span class="badge outline">Technology</span></div>
+        </div>
+      </a>
+
+      <a href="speaker-detail.html" class="speaker-card">
+        <div class="speaker-photo">
+          <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=400&auto=format&fit=crop" alt="David Okafor">
+          <div class="speaker-logo-badge">Sabre</div>
+        </div>
+        <div class="speaker-info">
+          <div class="speaker-name">David Okafor</div>
+          <div class="speaker-role">Chief Strategy Officer</div>
+          <div class="speaker-company">Sabre Hospitality</div>
+          <div class="speaker-cat"><span class="badge outline">Investment</span></div>
+        </div>
+      </a>
+
+    </div>
+
+    <div class="pagination">
+      <div class="page-num active">1</div>
+      <div class="page-num">2</div>
+      <div class="page-num">3</div>
+      <div class="page-num">4</div>
+      <div class="page-num">→</div>
+    </div>
+  </div>
+</section>
+
+<section class="tight" style="background:var(--bg-light);">
+  <div class="wrap">
+    <div class="cta-final" style="background:var(--secondary);">
+      <h2>Want to Speak at the Summit?</h2>
+      <p>We're always looking for senior leaders with a clear, original point of view on the future of guest experience.</p>
+      <div class="cta-final-row">
+        <a href="contact.html" class="btn btn-primary">Submit a Speaker Proposal →</a>
+        <a href="agenda.html" class="btn btn-secondary">View the Agenda</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo">THE GUEST EXPERIENCE<br><span class="accent">SUMMIT</span></div>
+        <p class="footer-desc">The world's first exclusively C-level summit where hospitality leaders shape the future of guest experience.</p>
+      </div>
+      <div class="footer-col"><h4>Event</h4><ul><li><a href="agenda.html">Agenda</a></li><li><a href="speakers.html">Speakers</a></li><li><a href="networking.html">Networking</a></li><li><a href="insights.html">Insights</a></li></ul></div>
+      <div class="footer-col"><h4>Attend</h4><ul><li><a href="request-invitation.html">Request Invitation</a></li><li><a href="request-invitation.html">Eligibility</a></li><li><a href="contact.html">FAQ</a></li></ul></div>
+      <div class="footer-col"><h4>Partner</h4><ul><li><a href="partners.html">Sponsorship</a></li><li><a href="partners.html">Partners</a></li><li><a href="partners.html">Case Studies</a></li></ul></div>
+      <div class="footer-col"><h4>Contact</h4><ul><li><a href="contact.html">The Landmark, London</a></li><li><a href="agenda.html">28 January 2027</a></li><li><a href="contact.html">Get in Touch</a></li></ul></div>
+    </div>
+    <div class="footer-bottom"><span>© 2027 The Guest Experience Summit. All rights reserved.</span><span>Privacy Policy · Terms</span></div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>

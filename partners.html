@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Partners — The Guest Experience Summit</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/shared.css">
+<style>
+  .why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;}
+  .why-card{padding:32px;}
+  .why-icon{width:48px;height:48px;border-radius:12px;background:var(--primary-tint);color:var(--primary);display:flex;align-items:center;justify-content:center;margin-bottom:20px;}
+  .why-card h3{font-size:19px;text-transform:none;margin-bottom:10px;}
+  .why-card p{font-size:14px;color:var(--text-secondary);line-height:1.6;}
+
+  .demo-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;}
+  .demo-card{text-align:center;padding:32px 20px;}
+  .demo-num{font-size:36px;font-weight:800;color:var(--primary);}
+  .demo-label{font-size:13px;color:var(--text-secondary);font-weight:600;margin-top:6px;}
+
+  .pkg-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;align-items:stretch;}
+  .pkg-card{padding:40px 32px;display:flex;flex-direction:column;}
+  .pkg-card.featured{border:2px solid var(--primary);position:relative;box-shadow:0 24px 50px rgba(227,30,36,.12);}
+  .pkg-featured-tag{
+    position:absolute;top:-14px;left:50%;transform:translateX(-50%);background:var(--primary);color:#fff;
+    font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.5px;padding:6px 16px;border-radius:999px;
+  }
+  .pkg-name{font-size:13px;text-transform:uppercase;letter-spacing:1px;font-weight:700;color:var(--text-secondary);}
+  .pkg-price{font-size:34px;font-weight:800;margin:10px 0 4px;}
+  .pkg-price span{font-size:14px;font-weight:500;color:var(--text-secondary);}
+  .pkg-desc{font-size:14px;color:var(--text-secondary);margin-bottom:24px;}
+  .pkg-features{display:flex;flex-direction:column;gap:13px;margin-bottom:32px;flex:1;}
+  .pkg-feature{display:flex;gap:10px;font-size:14px;align-items:flex-start;}
+  .pkg-feature svg{flex-shrink:0;color:var(--success);margin-top:2px;}
+
+  .cat-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;}
+  .cat-card{padding:28px;text-align:center;}
+  .cat-card .badge{margin-bottom:14px;}
+  .cat-card h4{font-size:16px;margin-bottom:8px;}
+  .cat-card p{font-size:13px;color:var(--text-secondary);}
+
+  .case-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px;}
+  .case-card{padding:32px;}
+  .case-quote{font-size:17px;font-weight:600;line-height:1.5;margin-bottom:20px;}
+  .case-person{display:flex;align-items:center;gap:12px;}
+  .case-person img{width:44px;height:44px;border-radius:50%;object-fit:cover;}
+  .case-person-name{font-weight:700;font-size:14px;}
+  .case-person-role{font-size:12px;color:var(--text-secondary);}
+
+  @media (max-width:1100px){
+    .why-grid,.demo-grid,.pkg-grid,.cat-grid,.case-grid{grid-template-columns:repeat(2,1fr);}
+  }
+  @media (max-width:640px){
+    .why-grid,.demo-grid,.pkg-grid,.cat-grid,.case-grid{grid-template-columns:1fr;}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <nav>
+    <a href="index.html" class="logo">THE GUEST<br>EXPERIENCE<br><span class="accent">SUMMIT</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="agenda.html">Agenda</a></li>
+      <li><a href="speakers.html">Speakers</a></li>
+      <li><a href="partners.html" class="active">Partners</a></li>
+      <li><a href="insights.html">Insights</a></li>
+      <li><a href="networking.html">Networking</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+    <a href="request-invitation.html" class="btn btn-primary">Request Invitation</a>
+  </nav>
+</header>
+
+<section class="page-hero">
+  <div class="wrap">
+    <div class="eyebrow">Partnership</div>
+    <h1>Align Your Brand With<br>the Leaders of Hospitality</h1>
+    <p class="sub">Reach 250+ C-level decision-makers in one room. No trade-show noise — a curated, exclusively executive audience built for meaningful commercial conversations.</p>
+    <div style="display:flex;gap:14px;margin-top:32px;flex-wrap:wrap;">
+      <a href="#lead-form" class="btn btn-primary">Request the Sponsorship Deck →</a>
+      <a href="#packages" class="btn btn-secondary">View Packages</a>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="section-head">
+      <div><div class="eyebrow">Why Partner</div><h2>An Audience Built<br>for Decision-Makers</h2></div>
+    </div>
+    <div class="why-grid">
+      <div class="card why-card">
+        <div class="why-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+        <h3>100% Verified C-Level Attendance</h3>
+        <p>Every attendee is verified at CEO, COO, CMO or Founder level before invitation. No junior delegates, no padding.</p>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></div>
+        <h3>12+ Countries Represented</h3>
+        <p>A genuinely international delegate base spanning Europe, the Middle East, North America and Asia-Pacific.</p>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/><path d="M16 2l6 6M22 2l-7 7"/></svg></div>
+        <h3>Structured Commercial Access</h3>
+        <p>Roundtables, hosted dinners and pre-arranged meetings replace stand-and-wait booths with real conversation time.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="tight" style="background:var(--bg-light);">
+  <div class="wrap">
+    <div class="section-head"><div><div class="eyebrow">Audience Demographics</div><h2 style="font-size:32px;">Who's in the Room</h2></div></div>
+    <div class="demo-grid">
+      <div class="card demo-card"><div class="demo-num">62%</div><div class="demo-label">CEO / Managing Director</div></div>
+      <div class="card demo-card"><div class="demo-num">23%</div><div class="demo-label">COO / VP Operations</div></div>
+      <div class="card demo-card"><div class="demo-num">15%</div><div class="demo-label">CMO / CTO / Founder</div></div>
+      <div class="card demo-card"><div class="demo-num">£2.4bn+</div><div class="demo-label">Combined Annual Budget Authority</div></div>
+    </div>
+  </div>
+</section>
+
+<section id="packages">
+  <div class="wrap">
+    <div class="section-head">
+      <div><div class="eyebrow">Sponsorship Packages</div><h2>Choose Your Level<br>of Presence</h2></div>
+    </div>
+    <div class="pkg-grid">
+      <div class="card pkg-card">
+        <div class="pkg-name">Partner</div>
+        <div class="pkg-price">£18,000</div>
+        <div class="pkg-desc">For brands establishing presence with this audience for the first time.</div>
+        <div class="pkg-features">
+          <div class="pkg-feature"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Logo on website & event signage</div>
+          <div class="pkg-feature"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> 2 delegate passes</div>
+          <div class="pkg-feature"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Exhibition table</div>
+          <div class="pkg-feature"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Listed in partner directory</div>
+        </div>
+        <a href="#lead-form" class="btn btn-secondary">Enquire →</a>
+      </div>
+      <div class="card pkg-card featured">
+        <div class="pkg-featured-tag">Most Popular</div>
+        <div class="pkg-name">Strategic Partner</div>
+        <div class="pkg-price">£42,000</div>
+        <div class="pkg-desc">For brands seeking a visible platform and direct executive access.</div>
+        <div class="pkg-features">
+          <div class="pkg-feature"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Everything in Partner</div>
+          <div class="pkg-feature"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Speaking slot on a breakout track</div>
+          <div class="pkg-feature"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Host one Executive Roundtable</div>
+          <div class="pkg-feature"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> 5 delegate passes</div>
+          <div class="pkg-feature"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Pre-arranged executive meetings</div>
+        </div>
+        <a href="#lead-form" class="btn btn-primary">Enquire →</a>
+      </div>
+      <div class="card pkg-card">
+        <div class="pkg-name">Headline Partner</div>
+        <div class="pkg-price">By Application</div>
+        <div class="pkg-desc">Exclusive, category-locked headline presence — one brand per industry vertical.</div>
+        <div class="pkg-features">
+          <div class="pkg-feature"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Everything in Strategic Partner</div>
+          <div class="pkg-feature"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Mainstage keynote or fireside slot</div>
+          <div class="pkg-feature"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Category exclusivity</div>
+          <div class="pkg-feature"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Host the Summit Dinner</div>
+          <div class="pkg-feature"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> 10 delegate passes</div>
+        </div>
+        <a href="#lead-form" class="btn btn-secondary">Enquire →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="tight" style="background:var(--bg-light);">
+  <div class="wrap">
+    <div class="section-head"><div><div class="eyebrow">Partner Categories</div><h2 style="font-size:32px;">Built for Every Vertical</h2></div></div>
+    <div class="cat-grid">
+      <div class="card cat-card"><span class="badge">Technology</span><h4>Hospitality Tech</h4><p>PMS, CRM, AI personalisation, booking platforms</p></div>
+      <div class="card cat-card"><span class="badge">Finance</span><h4>Investment & Capital</h4><p>PE, REITs, hospitality-focused investment banks</p></div>
+      <div class="card cat-card"><span class="badge">Services</span><h4>Consulting & Advisory</h4><p>Strategy, operations and brand consultancies</p></div>
+      <div class="card cat-card"><span class="badge">Design</span><h4>Design & Architecture</h4><p>Interior design, hospitality architecture studios</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="tight">
+  <div class="wrap">
+    <div class="trusted-label">Our Current Partners</div>
+    <div class="logo-wall">
+      <span>Marriott</span><span>Hilton</span><span>ACCOR</span><span>IHG</span>
+      <span>MEWS</span><span>ORACLE</span><span>Sabre</span><span>Deloitte.</span>
+    </div>
+  </div>
+</section>
+
+<section class="tight" style="background:var(--bg-light);">
+  <div class="wrap">
+    <div class="section-head"><div><div class="eyebrow">Case Studies</div><h2 style="font-size:32px;">What Partners Say</h2></div></div>
+    <div class="case-grid">
+      <div class="card case-card">
+        <div class="case-quote">"We closed three enterprise deals directly from conversations started at the Summit dinner. No other event has delivered that quality of access."</div>
+        <div class="case-person">
+          <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=100&auto=format&fit=crop" alt="">
+          <div><div class="case-person-name">Amelia Torres</div><div class="case-person-role">VP Hospitality Technology, Oracle</div></div>
+        </div>
+      </div>
+      <div class="card case-card">
+        <div class="case-quote">"The roundtable format gave us forty-five uninterrupted minutes with five CEOs. That's simply not available at a typical trade conference."</div>
+        <div class="case-person">
+          <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=100&auto=format&fit=crop" alt="">
+          <div><div class="case-person-name">David Okafor</div><div class="case-person-role">Chief Strategy Officer, Sabre Hospitality</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="lead-form">
+  <div class="wrap">
+    <div style="display:grid;grid-template-columns:1fr 1.3fr;gap:56px;align-items:flex-start;">
+      <div>
+        <div class="eyebrow">Get Started</div>
+        <h2 style="font-size:36px;text-transform:uppercase;margin:14px 0 16px;">Request the Sponsorship Deck</h2>
+        <p style="color:var(--text-secondary);font-size:16px;line-height:1.6;">Tell us about your goals and our partnerships team will reply within one business day with package details, audience data and availability.</p>
+      </div>
+      <form class="form-card">
+        <div class="form-grid">
+          <div class="form-field"><label>Full Name <span class="req">*</span></label><input type="text" placeholder="Jane Doe"></div>
+          <div class="form-field"><label>Company <span class="req">*</span></label><input type="text" placeholder="Company name"></div>
+          <div class="form-field"><label>Work Email <span class="req">*</span></label><input type="email" placeholder="jane@company.com"></div>
+          <div class="form-field"><label>Job Title <span class="req">*</span></label><input type="text" placeholder="VP Marketing"></div>
+          <div class="form-field full"><label>Package of Interest</label>
+            <select><option>Partner — £18,000</option><option>Strategic Partner — £42,000</option><option>Headline Partner — By Application</option><option>Not sure yet</option></select>
+          </div>
+          <div class="form-field full"><label>Tell Us About Your Goals</label><textarea placeholder="What are you hoping to achieve by partnering with the Summit?"></textarea></div>
+        </div>
+        <button class="btn btn-primary" style="margin-top:20px;width:100%;justify-content:center;">Request the Deck →</button>
+        <p class="form-help" style="margin-top:14px;">We'll respond within one business day. Your details are never shared with third parties.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo">THE GUEST EXPERIENCE<br><span class="accent">SUMMIT</span></div>
+        <p class="footer-desc">The world's first exclusively C-level summit where hospitality leaders shape the future of guest experience.</p>
+      </div>
+      <div class="footer-col"><h4>Event</h4><ul><li><a href="agenda.html">Agenda</a></li><li><a href="speakers.html">Speakers</a></li><li><a href="networking.html">Networking</a></li><li><a href="insights.html">Insights</a></li></ul></div>
+      <div class="footer-col"><h4>Attend</h4><ul><li><a href="request-invitation.html">Request Invitation</a></li><li><a href="request-invitation.html">Eligibility</a></li><li><a href="contact.html">FAQ</a></li></ul></div>
+      <div class="footer-col"><h4>Partner</h4><ul><li><a href="partners.html">Sponsorship</a></li><li><a href="partners.html">Partners</a></li><li><a href="partners.html">Case Studies</a></li></ul></div>
+      <div class="footer-col"><h4>Contact</h4><ul><li><a href="contact.html">The Landmark, London</a></li><li><a href="agenda.html">28 January 2027</a></li><li><a href="contact.html">Get in Touch</a></li></ul></div>
+    </div>
+    <div class="footer-bottom"><span>© 2027 The Guest Experience Summit. All rights reserved.</span><span>Privacy Policy · Terms</span></div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
