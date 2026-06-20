@@ -6,191 +6,7 @@
 <title>The Guest Experience Summit — 28 January 2027, The Landmark London</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-<style>
-  :root{
-    --primary:#E31E24;
-    --primary-hover:#C91820;
-    --secondary:#111111;
-    --bg:#FFFFFF;
-    --bg-light:#F8F8F8;
-    --border:#EAEAEA;
-    --text-secondary:#666666;
-    --success:#16A34A;
-    --container:1400px;
-    --radius:16px;
-  }
-  *{margin:0;padding:0;box-sizing:border-box;}
-  body{
-    font-family:'Inter',sans-serif;
-    color:var(--secondary);
-    background:var(--bg);
-    -webkit-font-smoothing:antialiased;
-  }
-  img{max-width:100%;display:block;}
-  a{text-decoration:none;color:inherit;}
-  .wrap{max-width:var(--container);margin:0 auto;padding:0 32px;}
-  .eyebrow{
-    font-size:12px;text-transform:uppercase;letter-spacing:1.5px;font-weight:600;color:var(--primary);
-  }
-  .eyebrow.dark{color:var(--secondary);}
-  h1,h2,h3{font-weight:800;letter-spacing:-0.02em;line-height:1.05;}
-  .btn{
-    display:inline-flex;align-items:center;gap:8px;
-    padding:16px 28px;border-radius:8px;font-weight:600;font-size:15px;
-    transition:all .2s ease;border:1.5px solid transparent;cursor:pointer;white-space:nowrap;
-  }
-  .btn-primary{background:var(--primary);color:#fff;}
-  .btn-primary:hover{background:var(--primary-hover);box-shadow:0 8px 24px rgba(227,30,36,.28);transform:translateY(-2px);}
-  .btn-secondary{background:#fff;color:var(--secondary);border-color:var(--secondary);}
-  .btn-secondary:hover{box-shadow:0 8px 20px rgba(0,0,0,.1);transform:translateY(-2px);}
-
-  /* NAV */
-  header{
-    position:sticky;top:0;z-index:100;background:rgba(255,255,255,.92);
-    backdrop-filter:blur(10px);border-bottom:1px solid var(--border);
-  }
-  nav{display:flex;align-items:center;justify-content:space-between;padding:18px 32px;max-width:var(--container);margin:0 auto;}
-  .logo{font-weight:800;font-size:14px;line-height:1.3;letter-spacing:.5px;text-transform:uppercase;}
-  .logo .accent{color:var(--primary);display:block;}
-  .nav-links{display:flex;gap:36px;list-style:none;align-items:center;}
-  .nav-links a{font-size:14px;font-weight:600;color:var(--secondary);padding-bottom:4px;border-bottom:2px solid transparent;}
-  .nav-links a.active,.nav-links a:hover{border-color:var(--primary);color:var(--primary);}
-  .nav-right{display:flex;align-items:center;}
-
-  /* HERO */
-  .hero{position:relative;overflow:hidden;padding:80px 0 0;}
-  .hero-grid{
-    display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center;
-    max-width:var(--container);margin:0 auto;padding:0 32px;
-  }
-  .hero h1{font-size:80px;text-transform:uppercase;margin:18px 0 22px;}
-  .hero h1 .red{color:var(--primary);}
-  .hero p.sub{font-size:18px;color:var(--text-secondary);max-width:460px;margin-bottom:28px;}
-  .meta-row{display:flex;gap:28px;margin-bottom:32px;flex-wrap:wrap;}
-  .meta-item{display:flex;align-items:center;gap:8px;font-weight:700;font-size:15px;}
-  .meta-item svg{flex-shrink:0;color:var(--primary);}
-  .cta-row{display:flex;gap:14px;flex-wrap:wrap;}
-  .hero-image-wrap{position:relative;border-radius:var(--radius);overflow:hidden;aspect-ratio:4/3.1;}
-  .hero-image-wrap img{width:100%;height:100%;object-fit:cover;}
-  .hero-image-wrap::after{
-    content:"";position:absolute;inset:0;
-    background:linear-gradient(120deg, rgba(227,30,36,.0) 45%, rgba(227,30,36,.35) 100%);
-  }
-  .diag-accent{
-    position:absolute;top:0;right:0;width:38%;height:100%;
-    background:linear-gradient(180deg,#fff 0%, rgba(255,255,255,0) 100%);
-    clip-path:polygon(100% 0,100% 100%,40% 100%);
-    opacity:.5;pointer-events:none;
-  }
-
-  /* STATS BAR */
-  .stats-bar{
-    max-width:calc(var(--container) - 64px);margin:64px auto 0;
-    background:#fff;border:1px solid var(--border);border-radius:var(--radius);
-    box-shadow:0 20px 50px rgba(17,17,17,.07);
-    display:grid;grid-template-columns:repeat(4,1fr);
-    padding:38px 24px;position:relative;z-index:2;
-  }
-  .stat{display:flex;gap:16px;align-items:flex-start;padding:0 16px;border-right:1px solid var(--border);}
-  .stat:last-child{border-right:none;}
-  .stat-icon{
-    width:48px;height:48px;border-radius:50%;background:#FDECEC;
-    display:flex;align-items:center;justify-content:center;flex-shrink:0;color:var(--primary);
-  }
-  .stat-num{font-size:30px;font-weight:800;line-height:1.1;}
-  .stat-label{font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.5px;margin-top:2px;}
-  .stat-sub{font-size:13px;color:var(--text-secondary);margin-top:4px;}
-
-  section{padding:96px 0;}
-  .section-head{display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:48px;gap:24px;flex-wrap:wrap;}
-  .section-head h2{font-size:40px;text-transform:uppercase;margin-top:12px;}
-  .view-all{font-weight:700;font-size:14px;color:var(--primary);display:flex;align-items:center;gap:6px;}
-
-  /* SPEAKERS */
-  .speaker-rail{display:grid;grid-template-columns:repeat(6,1fr);gap:20px;}
-  .speaker-card{text-align:left;}
-  .speaker-photo{border-radius:12px;overflow:hidden;aspect-ratio:3/3.4;margin-bottom:14px;background:var(--bg-light);position:relative;}
-  .speaker-photo img{width:100%;height:100%;object-fit:cover;}
-  .speaker-logo-badge{
-    position:absolute;bottom:10px;left:10px;background:#fff;border-radius:6px;
-    padding:5px 9px;font-size:10px;font-weight:800;box-shadow:0 4px 10px rgba(0,0,0,.12);
-  }
-  .speaker-name{font-weight:700;font-size:15px;}
-  .speaker-role{font-size:13px;color:var(--primary);font-weight:700;margin-top:2px;}
-  .speaker-company{font-size:12px;color:var(--text-secondary);}
-
-  /* AGENDA */
-  .agenda-section{background:var(--bg-light);}
-  .agenda-layout{display:grid;grid-template-columns:1fr 2fr;gap:56px;align-items:flex-start;}
-  .agenda-layout h2{font-size:40px;text-transform:uppercase;margin-bottom:14px;}
-  .agenda-layout p{color:var(--text-secondary);font-size:16px;margin-bottom:28px;max-width:380px;}
-  .timeline{position:relative;}
-  .timeline::before{content:"";position:absolute;top:22px;left:0;right:0;height:2px;background:var(--border);}
-  .timeline-track{display:grid;grid-template-columns:repeat(5,1fr);gap:16px;}
-  .tl-item{position:relative;}
-  .tl-time{font-size:13px;font-weight:700;color:var(--text-secondary);margin-bottom:14px;}
-  .tl-dot{
-    width:14px;height:14px;border-radius:50%;background:var(--primary);
-    border:3px solid #fff;box-shadow:0 0 0 1px var(--primary);
-    position:absolute;top:-28px;left:0;
-  }
-  .tl-icon{
-    width:44px;height:44px;border-radius:10px;background:#fff;border:1px solid var(--border);
-    display:flex;align-items:center;justify-content:center;color:var(--primary);margin-bottom:14px;
-  }
-  .tl-title{font-weight:700;font-size:14px;margin-bottom:8px;}
-  .tl-desc{font-size:13px;color:var(--text-secondary);line-height:1.5;}
-
-  /* LOGO WALL */
-  .trusted-label{text-align:center;margin-bottom:36px;color:var(--text-secondary);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:1px;}
-  .logo-wall{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:32px;opacity:.75;}
-  .logo-wall img{height:28px;width:auto;object-fit:contain;filter:grayscale(100%);}
-  .logo-wall span{font-weight:800;font-size:18px;letter-spacing:-.5px;}
-
-  /* FINAL CTA BANNER */
-  .cta-banner{
-    background:#FDECEC;border-radius:var(--radius);
-    padding:44px 48px;display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;
-  }
-  .cta-banner-item{display:flex;gap:16px;align-items:center;flex:1;min-width:260px;}
-  .cta-banner-icon{
-    width:48px;height:48px;border-radius:50%;background:var(--primary);color:#fff;
-    display:flex;align-items:center;justify-content:center;flex-shrink:0;
-  }
-  .cta-banner-title{font-weight:700;font-size:15px;}
-  .cta-banner-sub{font-size:13px;color:var(--text-secondary);}
-  .cta-banner-arrow{margin-left:auto;color:var(--primary);}
-
-  footer{background:var(--secondary);color:#fff;padding:72px 0 32px;margin-top:0;}
-  .footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr 1.2fr;gap:32px;margin-bottom:56px;}
-  .footer-logo{font-weight:800;text-transform:uppercase;font-size:14px;margin-bottom:16px;}
-  .footer-logo .accent{color:var(--primary);}
-  .footer-desc{color:#999;font-size:14px;line-height:1.6;max-width:280px;}
-  .footer-col h4{font-size:13px;text-transform:uppercase;letter-spacing:1px;margin-bottom:18px;color:#999;}
-  .footer-col ul{list-style:none;display:flex;flex-direction:column;gap:12px;}
-  .footer-col a{color:#ccc;font-size:14px;}
-  .footer-col a:hover{color:var(--primary);}
-  .footer-bottom{border-top:1px solid #2a2a2a;padding-top:24px;display:flex;justify-content:space-between;color:#777;font-size:13px;flex-wrap:wrap;gap:12px;}
-
-  @media (max-width:1100px){
-    .hero-grid{grid-template-columns:1fr;}
-    .hero h1{font-size:56px;}
-    .stats-bar{grid-template-columns:repeat(2,1fr);gap:24px;}
-    .stat{border-right:none;border-bottom:1px solid var(--border);padding-bottom:20px;}
-    .speaker-rail{grid-template-columns:repeat(3,1fr);}
-    .agenda-layout{grid-template-columns:1fr;}
-    .timeline-track{grid-template-columns:repeat(3,1fr);row-gap:32px;}
-    .footer-grid{grid-template-columns:1fr 1fr;}
-  }
-  @media (max-width:640px){
-    .nav-links{display:none;}
-    .hero h1{font-size:38px;}
-    .speaker-rail{grid-template-columns:repeat(2,1fr);}
-    .timeline-track{grid-template-columns:repeat(2,1fr);}
-    .footer-grid{grid-template-columns:1fr;}
-    .cta-banner{flex-direction:column;}
-  }
-</style>
+<link rel="stylesheet" href="assets/css/shared.css">
 </head>
 <body>
 
@@ -234,7 +50,7 @@
       </div>
     </div>
     <div class="hero-image-wrap">
-      <img src="https://images.unsplash.com/photo-1529655683826-aba9b3e77383?q=80&w=1200&auto=format&fit=crop" alt="London skyline at sunset, Big Ben and Westminster Bridge">
+      <img src="assets/images/placeholder-001.svg" alt="London skyline at sunset, Big Ben and Westminster Bridge">
       <div class="diag-accent"></div>
     </div>
   </div>
@@ -289,7 +105,7 @@
     <div class="speaker-rail">
       <div class="speaker-card">
         <div class="speaker-photo">
-          <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=400&auto=format&fit=crop" alt="John Smith">
+          <img src="assets/images/placeholder-002.svg" alt="John Smith">
           <div class="speaker-logo-badge">Marriott</div>
         </div>
         <div class="speaker-name">John Smith</div>
@@ -298,7 +114,7 @@
       </div>
       <div class="speaker-card">
         <div class="speaker-photo">
-          <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?q=80&w=400&auto=format&fit=crop" alt="Sarah Brown">
+          <img src="assets/images/placeholder-003.svg" alt="Sarah Brown">
           <div class="speaker-logo-badge">Hilton</div>
         </div>
         <div class="speaker-name">Sarah Brown</div>
@@ -307,7 +123,7 @@
       </div>
       <div class="speaker-card">
         <div class="speaker-photo">
-          <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=400&auto=format&fit=crop" alt="Sebastien Bazin">
+          <img src="assets/images/placeholder-004.svg" alt="Sebastien Bazin">
           <div class="speaker-logo-badge">Accor</div>
         </div>
         <div class="speaker-name">Sebastien Bazin</div>
@@ -316,7 +132,7 @@
       </div>
       <div class="speaker-card">
         <div class="speaker-photo">
-          <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=400&auto=format&fit=crop" alt="Richard Valtr">
+          <img src="assets/images/placeholder-005.svg" alt="Richard Valtr">
           <div class="speaker-logo-badge">Mews</div>
         </div>
         <div class="speaker-name">Richard Valtr</div>
@@ -325,7 +141,7 @@
       </div>
       <div class="speaker-card">
         <div class="speaker-photo">
-          <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=400&auto=format&fit=crop" alt="Heather Bader">
+          <img src="assets/images/placeholder-006.svg" alt="Heather Bader">
           <div class="speaker-logo-badge">IHG</div>
         </div>
         <div class="speaker-name">Heather Bader</div>
@@ -334,7 +150,7 @@
       </div>
       <div class="speaker-card">
         <div class="speaker-photo">
-          <img src="https://images.unsplash.com/photo-1519345182560-3f2917c472ef?q=80&w=400&auto=format&fit=crop" alt="Jose Silva">
+          <img src="assets/images/placeholder-007.svg" alt="Jose Silva">
           <div class="speaker-logo-badge">Jumeirah</div>
         </div>
         <div class="speaker-name">Jose Silva</div>
